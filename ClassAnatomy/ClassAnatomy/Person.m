@@ -9,5 +9,12 @@
 #import "Person.h"
 
 @implementation Person
+- (void) speak {
+  NSLog(@"I'm Esmaeil");
+}
+
++ (void) stateSpecies {
+  NSLog(@"I'm a human.");
+}
 
 @end

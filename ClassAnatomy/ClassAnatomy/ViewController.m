@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Vehicle.h"
+#import "Person.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSString *vehicle;
@@ -160,6 +161,16 @@
   
   [self declareWinner:200 :200];
   [self fired:@"Something"];
+  
+  Person *person = [[Person alloc]init];
+  [person speak];
+  [Person stateSpecies];
+  
+  UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://google.com"]]];
+  
+  NSString *urlString = @"http://google.com";
+  NSURL *url = [NSURL URLWithString:urlString];
+  
 }
 
 @end
