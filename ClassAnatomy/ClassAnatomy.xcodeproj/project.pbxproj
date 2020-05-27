@@ -15,6 +15,7 @@
 		DA6132A0247C4E8E009C7025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA61329F247C4E8E009C7025 /* Assets.xcassets */; };
 		DA6132A3247C4E8E009C7025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6132A1247C4E8E009C7025 /* LaunchScreen.storyboard */; };
 		DA6132A6247C4E8E009C7025 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6132A5247C4E8E009C7025 /* main.m */; };
+		DADB040D247EC0C900A1DDD9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DADB040C247EC0C900A1DDD9 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		DA6132A2247C4E8E009C7025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA6132A4247C4E8E009C7025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6132A5247C4E8E009C7025 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DADB040B247EC0C900A1DDD9 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DADB040C247EC0C900A1DDD9 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				DA6132A5247C4E8E009C7025 /* main.m */,
 				DA559A32247D7CEE00A0F7FA /* Vehicle.h */,
 				DA559A33247D7CEE00A0F7FA /* Vehicle.m */,
+				DADB040B247EC0C900A1DDD9 /* Person.h */,
+				DADB040C247EC0C900A1DDD9 /* Person.m */,
 			);
 			path = ClassAnatomy;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADB040D247EC0C900A1DDD9 /* Person.m in Sources */,
 				DA61329B247C4E8D009C7025 /* ViewController.m in Sources */,
 				DA613295247C4E8D009C7025 /* AppDelegate.m in Sources */,
 				DA6132A6247C4E8E009C7025 /* main.m in Sources */,

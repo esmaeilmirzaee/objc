@@ -11,6 +11,9 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSString *vehicle;
+
+@property (nonatomic) double bankAccount;
+@property (nonatomic) double itemAmount;
 @end
 
 @implementation ViewController
@@ -100,5 +103,63 @@
     NSLog(@"Hello Men");
   else
     NSLog(@"Hello Ladies");
+  
+  
+  // Method definition
+  self.bankAccount = 400.0;
+  self.itemAmount = 398.99;
+  [self setBankAccount:400.0];
+//  [self bankAccount] = 400.0;
+//  [self itemAmount] = 398.01;
+  
+  [self playground];
 }
+
+// Method definition
+  
+- (BOOL) canPurchase:(double) amount /*: (NSInteger) itemsPrice*/ {
+  if ([self bankAccount] >= amount) {
+    return YES;
+  }
+  return NO;
+}
+
+- (void) declareWinner:(NSInteger) playerAScore: (NSInteger) playerBScore {
+  if (playerAScore > playerBScore) {
+    NSLog(@"Player A is winner");
+  } else if (playerBScore > playerAScore) {
+    NSLog(@"Player B is winner");
+  } else {
+    NSLog(@"The game is in standstill!");
+  }
+}
+
+- (NSString*) declareWinnerWithPlayerAScore: (NSInteger) scoreA playerBScore: (NSInteger) scoreB {
+  if (scoreA > scoreB) {
+    return @"Player A is winner!";
+  } else if (scoreA < scoreB) {
+    return @"Player B is winner!";
+  } else {
+    return @"The game is at a standstill!";
+  }
+}
+
+- (BOOL) fired: (NSString*) reason {
+  
+  NSLog(@"%@", [self declareWinnerWithPlayerAScore:200 playerBScore:100]);
+  
+  return NO;
+}
+
+- (void) playground {
+  if ([self canPurchase:self.itemAmount]) {
+    NSLog(@"Happy shopping");
+  } else {
+    NSLog(@"Hope see you next time :)");
+  }
+  
+  [self declareWinner:200 :200];
+  [self fired:@"Something"];
+}
+
 @end
