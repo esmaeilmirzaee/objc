@@ -171,6 +171,13 @@
   NSString *urlString = @"http://google.com";
   NSURL *url = [NSURL URLWithString:urlString];
   
+  //MARK - Arrays
+  NSArray *arr = [NSArray arrayWithObjects: @1, @2, @3, @4, nil];
+  for(int i = 0; i < [arr count]; i++) {
+    NSLog(@"%@", arr[i]);
+  }
+  
+  
 }
 
 @end
